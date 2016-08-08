@@ -43,20 +43,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">【威神小組】</a>
+          <a class="navbar-brand" href="#">中原大學巨量資料管理學程-wilson 威神小組</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -64,17 +52,21 @@
       <div class="container">
         <h1>氣候與蔬果價量的預測：時間序列分析</h1>
 		<div><h3>
+		<img src="indexpicture.jpg" class="img-rounded" alt="Cinque Terre" width="1200" height="400">
+		
 		<form method="POST" action="action.php">
-		請輸入A：<input name="var_a"><BR><BR>
-		請輸入B：<input name="var_b"><BR><BR>
+		<BR>請選擇蔬果：<Form><select name="Fruits and Vegetables">
+　			<option value="Cabbage">甘藍(高麗菜)</option>
+　			<option value="Litchi">荔枝</option>
+　			<option value="Hsinchu">新竹</option>
+　			<option value="Miaoli">苗栗</option>
+		</select>
+		</form>
+		
+		<BR>請選擇天數：<input name="var_b"><BR><BR>
 		<input class="btn btn-primary btn-lg" href="#" role="button" type="submit"><BR>
 		</form>
 		</h3></div>
-		
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">找到按鈕</a></p>
-		<p>
-		<a class="btn btn-warning btn-lg"" role="button">我的按鈕</a>
-		</p>
       </div>
     </div>
 
@@ -82,22 +74,26 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <img src="weather.jpg" class="img-rounded" width="300" height="200">
+          <h2>Weather</h2>
+          <p> Including temperature,typhoon and rainfall.<BR>
+		  from 2013.01 to 2016.07 </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <img src="fruit.jpg" class="img-rounded" width="300" height="200">
+          <h2>Price</h2>
+          <p> Friuts and vegetables  </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
+          <img src="news.jpg" class="img-rounded" width="300" height="200">
+		  <h2>News</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
 		<div class="page-header">
-        <h1>Tables</h1>
+        <h1>Sequential Tables</h1>
 		</div>
 		<div class="row">
         <div class="col-md-6">
@@ -239,7 +235,7 @@
       <hr>
 
       <footer>
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; 2016 Bigdata-Wilson, Inc.</p>
       </footer>
     </div> <!-- /container -->
 
