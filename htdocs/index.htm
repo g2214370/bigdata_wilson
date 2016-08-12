@@ -94,15 +94,15 @@
     </div><!-- /.carousel -->
 		
 		<form method="POST" action="action.php">
-		<BR>請選擇蔬果：<Form><select name="Fruits and Vegetables">
-　			<option value="Cabbage">甘藍(高麗菜)</option>
-　			<option value="Litchi">荔枝</option>
+		<BR>請選擇品項：<Form><select name="Fruits and Vegetables">
+　			<option value="Cabbage">甘藍-初秋</option>
+　			<option value="Litchi">甘藍</option>
 　			<option value="Hsinchu">新竹</option>
 　			<option value="Miaoli">苗栗</option>
 		</select>
 		</form>
 		
-		<BR>請選擇天數：<input name="var_b"><BR><BR>
+		<BR>請輸入天數：<input name="var_b"><BR><BR>
 		<input class="btn btn-primary btn-lg" href="#" role="button" type="submit"><BR>
 		</form>
 		</h3></div>
@@ -112,169 +112,31 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+	  <form method="POST" action="weatherinformation.php">
         <div class="col-md-4">
 		  <img src="weather.jpg" class="img-rounded" width="300" height="200">
           <h2>Weather</h2>
           <p> Including temperature,typhoon and rainfall.<BR>
-		  from 2013.01 to 2016.07 </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		  from 2013.01 to 2016.08 </p>
+          <p><a class="btn btn-default" href="weatherinformation.php" role="button">View details &raquo;</a></p>
+		  
         </div>
         <div class="col-md-4">
 		  <img src="fruit.jpg" class="img-rounded" width="300" height="200">
           <h2>Price</h2>
-          <p> Friuts and vegetables  </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p> vegetable price from 2013.01~2016.08  </p>
+          <p><a class="btn btn-default" href="price.php" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <img src="news.jpg" class="img-rounded" width="300" height="200">
-		  <h2>News</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		  <h2>Other teams</h2>
+          <p>農產品品質視覺辨識：圖形分析</p>
+          <p><a class="btn btn-default" href="http://www.bigdata.cycu.edu.tw/family" role="button">Link &raquo;</a></p>
         </div>
-		<div class="page-header">
-        <h1>Sequential Tables</h1>
-		</div>
-		<div class="row">
-        <div class="col-md-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-		</div>
-        <div class="col-md-6">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="2">1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@TwBootstrap</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-md-6">
-          <table class="table table-condensed">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      </div>
-      <hr>
 
       <footer>
-        <p>&copy; 2016 Bigdata-Wilson, Inc.</p>
+        <p>&copy; 2016 Bigdata-Wilson, Inc. picture source：pinterest</p>
       </footer>
     </div> <!-- /container -->
 
