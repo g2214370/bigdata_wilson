@@ -50,53 +50,18 @@
       <div class="container">
         <h1>氣候與蔬果價量的預測：時間序列分析</h1>
 	 <h1>Weather Informaion</h1>
-	<div>
-	<?php
-		print <<< HERE
-		<table border = "1">
-		<tr>
-		<th>Unnamed</th>
-		<th>date</th>
-		<th>avg_max_temp</th>
-		<th>avg_min_temp</th>
-		<th>avg_rain</th>
-		<th>max_wild</th>
-		<th>price</th>
-		<th>lbl_max_temp</th>
-		<th>lbl_min_temp</th>
-		<th>lbl_avg_rain</th>
-		<th>lbl_max_wind</th>
-	</tr>
-HERE;
-  $data = file("testing_weather1.csv");
-  foreach ($data as $line){
-  $lineArray = explode("\t", $line);
-  list($Unnamed, $date, $avg_max_temp, $avg_min_temp, $avg_rain, $max_wild, $price, $lbl_max_temp, $lbl_min_temp, $lbl_avg_rain, $lbl_max_wind) = $lineArray;
-  print <<< HERE
-   <tr>
-   <td>$Unnamed</td>
-   <td>$date</td>
-   <td>$avg_max_temp</td>
-   <td>$avg_min_temp</td>
-   <td>$avg_rain</td>
-   <td>$max_wild</td>
-   <td>$price</td>
-   <td>$lbl_max_temp</td>
-   <td>$lbl_min_temp</td>
-   <td>$lbl_avg_rain</td>
-   <td>$lbl_max_wind</td>
-   
-   </tr>
-HERE;
-  } // end foreach
-  //print the bottom of the table
-  print "</table> \n";
- ?>
- </div>
+    
 	
-	  <footer>
+	<BR><div class="col-md-4">
+	<img src="weatherinformation.jpg" class="img-rounded" width="800" height="400">
+	</div>
+	
+	<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><footer>
         <p>&copy; 2016 Bigdata-Wilson, Inc. picture source：pinterest</p>
-      </footer>
+    </footer>
+	
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -106,5 +71,7 @@ HERE;
     <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
+	
+	
   </body>
 </html>
