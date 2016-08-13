@@ -109,12 +109,12 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.area()
     .interpolate("basis")
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d["New York"]); });
+    .y(function(d) { return y(d["collbage1"]); });
 
 var area = d3.svg.area()
     .interpolate("basis")
     .x(function(d) { return x(d.date); })
-    .y1(function(d) { return y(d["New York"]); });
+    .y1(function(d) { return y(d["collbage1"]); });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -127,15 +127,15 @@ d3.tsv("data.tsv", function(error, data) {
 
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d["New York"]= +d["New York"];
-    d["San Francisco"] = +d["San Francisco"];
+    d["collbage1"]= +d["collbage1"];
+    d["collbage2"] = +d["collbage2"];
   });
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
 
   y.domain([
-    d3.min(data, function(d) { return Math.min(d["New York"], d["San Francisco"]); }),
-    d3.max(data, function(d) { return Math.max(d["New York"], d["San Francisco"]); })
+    d3.min(data, function(d) { return Math.min(d["collbage1"], d["collbage2"]); }),
+    d3.max(data, function(d) { return Math.max(d["collbage1"], d["collbage2"]); })
   ]);
 
   svg.datum(data);
@@ -153,7 +153,7 @@ d3.tsv("data.tsv", function(error, data) {
   svg.append("path")
       .attr("class", "area above")
       .attr("clip-path", "url(#clip-above)")
-      .attr("d", area.y0(function(d) { return y(d["San Francisco"]); }));
+      .attr("d", area.y0(function(d) { return y(d["collbage2"]); }));
 
   svg.append("path")
       .attr("class", "area below")
