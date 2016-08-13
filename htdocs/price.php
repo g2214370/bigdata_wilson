@@ -49,7 +49,10 @@
     <div class="jumbotron">
       <div class="container">
         <h1>氣候與蔬果價量的預測：時間序列分析</h1>
-
+	
+	<BR><div class="col-md-4">
+	<img src="prices.png" class="img-rounded" width="1000" height="600">
+	</div>
 
 
     <!-- Bootstrap core JavaScript
